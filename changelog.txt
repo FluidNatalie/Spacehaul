@@ -1,0 +1,195 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.6.5
+Date: 20-04-2026
+  Minor Features:
+    - Space Age compatability removed
+---------------------------------------------------------------------------------------------------
+Version: 0.6.4
+Date: 20-04-2026
+  Minor Features:
+    - SPACE: Rocket fuel now needs a barrel, no matter which recipe is used
+  Bugfixes:
+    - BOTH: Fixed LDS cost to 1.1 rates not 0.16 somehow lol
+---------------------------------------------------------------------------------------------------
+Version: 0.6.3
+Date: 19-04-2026
+  Bugfixes:
+    - Changed mod structure; the mod now boots with space age
+    - Found locale bug with belts and inserters not being renamed, has yet to be fixed
+---------------------------------------------------------------------------------------------------
+Version: 0.6.2
+Date: 07-04-2026
+  Bugfixes:
+    - Fixed the prerequisite for inserter capacity bonus
+    - Fixed the prerequisite for production science
+    - Fixed nuclear fuel to be craftable
+---------------------------------------------------------------------------------------------------
+Version: 0.6.1
+Date: 05-04-2026
+  Bugfixes:
+    - Fixed recipe with stone furnaces in them. This was the burner mining drill and boiler, you know the things you need to COMPLETE THE FUCKING GAME.
+---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 04-04-2026
+  Major Features:
+    - Removed utiliy (yellow) science pack and replaced it with productivity (purple) science pack.
+    - Reworked the tech tree to fit the removal of yellow science but also to compact technologies. This leads to there being less technologies but more unlocks on average per tech.
+    - Removed most setting! You will play the way I want you to! I despise player agency!
+
+  Minor Features:
+    - Removed landmines as they are both underused and underpowered. The hope is that by removing them will reduce tech tree and inventory page clutter.
+
+  Balancing:
+    - Radar/Gun turret techs have been combined.
+    - Walls/Gate techs have been combined.
+    - Engine/Automobilism techs have been combined.
+    - Removed the Fluid wagon tech and adding it to the Railway technology.
+    - Battery/Electric energy accumulators techs have been combined.
+    - Solar energy/Electric energy distribution 1 techs have been combined.
+    - Plastics/Advanced circuit techs have been combined.
+    - Modules have been reworked into a tiered research.
+    - Solar panel equipment/Belt immnuity equipment/Night vision equipment techs have been combined.
+    - Logistic robotics/Construction robotics techs have been combined.
+    - Kovarex enrichment process/Nuclear fuel reprocessing techs have been combined.
+    - Atomic bomb/Uranium ammo techs have been combined.
+
+  Locale:
+    - Currently only has english locale but has many custom tech names and descriptions.
+    - German locale will be added soon.
+    - If you want to add a translation please contact me via the mod portal comments or via discord.
+
+  Bugfixes:
+    - Fixed Infinite Techs so that they work and have the correct prerequiste.
+    - Removed all things from the factoriopedia that don't belong there.
+    - Finally got rid for lube barrels.
+
+  Info:
+    - TO DO: Get a different thumbnail
+    - TO DO: Fix the icon for personal equipment
+    - TO DO: Set the energy distribution and module tech numbers to work correctly
+    - TO DO: Change Info Page on the mod portal
+    - Future plans: Add alternative victory conditions for more replayablity and for a greater reason to continue already finished saves. This would also be good practice for the Underhaul Overhaul.
+    - Future plans: Rebalance tech costs based on feed back and gameplay
+---------------------------------------------------------------------------------------------------
+Version: 0.5.6
+Date: 26-03-2026
+  Features:
+    - Removed small electric pole
+    - Removed advanced combinator tech
+    - Removed the individual module 1 techs
+    - Removed laser tech
+  Locale:
+    - Will wait a week for bug reports before adding german locale
+    - Changed locale so that steel funaces are now burner furnaces
+  Bugfixes:
+    - Made a bug fix but then removed the fixed feature, oops
+    - TO DO: Get a different thumbnail because I don't love the old one
+---------------------------------------------------------------------------------------------------
+Version: 0.5.5
+Date: 17-03-2026
+  Features:
+    - Implemented all setting!
+    - Changed small electirc poles to have the same stats as medium electric poles
+  Locale:
+    - Will wait a week for bug reports before adding german locale
+  Bugfixes:
+    - Completely done for now!
+    - TO DO: Get a different thumbnail because I don't love the old one
+---------------------------------------------------------------------------------------------------
+Version: 0.5.4
+Date: 16-03-2026
+  Features:
+    - Implemented the "remove inserter setting"
+    - Fixed setting edge cases so that the game can be completed no matter what setting combo is used
+  Locale:
+    - Left the german language in the dust
+  Bugfixes:
+    - Fixed HeavyArmour+ Tech Icon, thanks to Shemp and Honktown
+    - Changed Icons for railway and logistics
+    - Hid hidden items in the factoriopedia
+    - TO DO: Get a different thumbnail because I don't love the old one
+---------------------------------------------------------------------------------------------------
+Version: 0.5.3
+Date: 10-03-2026
+  Features:
+    - Removed Iron sticks properly!
+    - Removed automated railways but added it's unlocks into railway
+  Locale:
+    - Changed the german language, now more language per language
+  Bugfixes:
+    - Fixed HeavyArmour+ Tech Icon, thanks to Shemp and Honktown
+    - TO DO: Change Icons for railway and logistics
+    - TO DO: Add the remove inserter setting
+    - TO DO: Hide hidden items in the factoriopedia
+    - TO DO: Get a different thumbnail because I don't love the old one
+---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+Date: 08-03-2026
+  Features:
+    - Removed lube!
+    - Added temporary dependancy for the crash site settings mod.
+  Locale:
+    - Left the german language unchanged
+  Bugfixes:
+    - The mod now fucking loads. Hopefully
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 24-02-2026
+  Features:
+    - Ported the mod to 2.0
+    - Added Space Age as incompatible for now
+  Locale:
+    - Ported the german language from the Tungsten Cube mod!
+  Bugfixes:
+    - Changed the changelog to be European (fixed the dates).
+    - Added a setting that is currently unused but will be used in the future.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 10-08-2024
+  Balancing:
+    - Labs research speed increased from 1.0 to 1.5.
+    - Removed iron sticks as an ingredient from all (vanilla) recipes, simplifying many recipes. Replaced iron stick cost with similar iron plate or steel cost.
+    - Reduce cost of automation research. From 10Red at 10s to 5Red at 5s.
+    - Replaced copper plates with copper wires in electric poles recipes. Now all electric poles (small, medium, big) use copper wire.
+    - Reduce crafting time for burner mining drill, electric mining drill and gun turret.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 15-07-2024
+  Bugfixes:
+    - Fixed the "Unknown interface: freeplay" error when trying to launch a game mode other than freeplay
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 24-05-2024
+  Features:
+    - Added Heavy Armor+, an early-game armor with an small equipment grid
+    - Added additional items in the Space ship debris. Including a basic construction robot kit (that can be used with Heavy Armor+)
+  Bugfixes:
+    - Fixed the recipe for Uranium
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 06-05-2024
+  Features:
+    - Added mod settings to enable or disable some of the technologies: Combat robots, Discharge defense, beacons
+    - Reduced the collision box of solar panels so that dealing with solar farms is less tedious
+  Balancing:
+    - Reduced the number of rails required for Purple Science recipe
+    - Reduce cost of the fluid wagon tech
+    - Increased the cost of Modules 2 tech (in the previous version it was reduced too much)
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 25-04-2024
+  Features:
+    - This is the first version of the mod
+  Balancing:
+    - Reduced cost of steel plates from 5 to 3 iron plates
+    - Reduced cost of Red Circuits from 2GreenCircuit+3CopperWire+2PlasticBar to 2GreenCircuit+2CopperWire+1PlasticBar
+    - Reduced crafting time of Red Circuits from 6 to 3 seconds
+    - Changed the ratio of Copper wire to Green Circuit assemblers from 3:2 to 1:1
+    - Changed the ratio of Science (Red:Green:Gray:Blue:Purple:Yellow) assemblers from 5:6:5:12:7:7 to 5:5:5:6:6:6
+    - Reduced the number of Bonus Technologies. They are now fewer, but their bonus are more meaningful
+    - Reduced the costs for many recipes to feel less grindy
+    - Reduced the crafting time for many recipes
+    - Made the ratios for many related items easier to remember
+    - Reduced the costs for many technologies to feel less grindy
+    - Removes some technologies that most people don't use (like combat robots)
+    - Reworked the modules. Overall, they offer more bonuses and less drawbacks. HOWEVER, Beacons are disabled
