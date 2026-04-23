@@ -72,7 +72,7 @@ Recipe:get("fast-underground-belt"):setIngredients({
 }):setEnergy(1)
 
 -- Set belt recipes to the correct amounts
-Recipe:get("torbo-transport-belt"):setIngredients({
+Recipe:get("turbo-transport-belt"):setIngredients({
   {type= "item", name= "fast-transport-belt", amount= 1},
   {type= "item", name= "tungsten-plate", amount= 5},
   {type= "fluid", name= "heavy-oil", amount= 20}
@@ -344,14 +344,6 @@ Recipe:get("rocket-silo"):setIngredients({
   {type= "item", name= "concrete", amount= 500}
 })
 
--- Satellite. Reduce from from 100BC+100LDS+100solarPanel+100accumulator+50rocketFuel+5radar -> 50BC+50LDS+50solarPanel+50accumulator
-Recipe:get("satellite"):setIngredients({
-  {type= "item", name= "processing-unit", amount= 50},
-  {type= "item", name= "low-density-structure", amount= 50},
-  {type= "item", name= "solar-panel", amount= 50},
-  {type= "item", name= "accumulator", amount= 50}
-})
-
 -- Steel plate. Reduce the iron cost from 5 -> 3
 Recipe:get("steel-plate"):setIngredients({
   {type= "item", name= "iron-plate", amount= 3}
@@ -362,6 +354,42 @@ Recipe:get("battery"):setEnergy(3)
 
 -- Explosives. Reduce crafting time from 4 -> 3 seconds
 Recipe:get("explosives"):setEnergy(3)
+
+-- Rocket fuel now takes a barrel no matter what.
+Recipe:get("rocket-fuel"):setIngredients({
+  {type= "item", name= "solid-fuel", amount= 5},
+  {type= "fluid", name= "light-oil", amount= 10},
+  {type= "item", name= "barrel", amount= 1}
+})
+Recipe:get("rocket-fuel-from-jelly"):setIngredients({
+  {type = "fluid", name= "water", amount = 30},
+  {type = "item", name=  "jelly", amount = 30},
+  {type = "item", name= "bioflux", amount = 2},
+  {type = "item", name= "barrel", amount = 1}
+})
+Recipe:get("ammonia-rocket-fuel"):setEnergy():setIngredients({
+  {type = "item", name= "solid-fuel", amount = 5},
+  {type = "fluid", name= "water", amount= 50},
+  {type = "fluid", name= "ammonia", amount = 500},
+  {type = "item", name= "barrel", amount = 1}
+})
+
+Recipe:get("fusion-power-cell"):setIngredients({
+  {type = "fluid", name= "ammonia", amount= 100},
+  {type = "item", name= "holmium-plate", amount= 1},
+  {type = "item", name= "lithium-plate", amount= 5},
+  {type = "item", name= "barrel", amount = 1}
+})
+Recipe:get("uranium-fuel-cell"):setIngredients({
+  {type = "item", name= "uranium-235", amount = 1},
+  {type = "item", name= "uranium-238", amount= 19},
+  {type = "item", name= "barrel", amount = 1}
+})
+Recipe:get("nuclear-fuel-reprocessing"):setProducts({
+  {type = "item", name= "uranium-238", amount= 5},
+  {type = "item", name= "barrel", amount = 1, probability = 0.05}
+})
+
 
 -- Uranium processing. Reduce uranium ore cost from 10 -> 8
 Recipe:get("uranium-processing"):setIngredients({
@@ -574,7 +602,7 @@ Tech:get("logistic-system"):setPrerequisites({"production-science-pack", "logist
 Tech:get("fission-reactor-equipment"):setPrerequisites({"production-science-pack", "military-science-pack", "nuclear-power", "power-armor"}):setColors("RGBMP")
 Tech:get("personal-roboport-mk2-equipment"):setPrerequisites({"production-science-pack", "personal-roboport-equipment"}):setColors("RGBP")
 Tech:get("military-4"):setPrerequisites({"production-science-pack", "military-3", "explosives"}):setColors("RGBMP")
-Tech:get("rocket-silo"):setCost(600):setPrerequisites({"production-science-pack", "concrete", "solar-energy", "battery", "radar", "rocket-fuel", "speed-module-3"}):setColors("RGBP")
+Tech:get("rocket-silo"):setCost(600):setPrerequisites({"concrete", "logistic-robotics", "rocket-fuel", "low-density-structure", "advanced-material-processing-2"}):setColors("RGB")
 
 Tech:get("power-armor-mk2"):setColors("RGBMP")
 Tech:get("destroyer"):setColors("RGBMP")

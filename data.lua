@@ -2,4 +2,4 @@
 require("__Spacehaul__.space_age_files.factoriopedia")
 require("__Spacehaul__.space_age_files.alternative_recipes")
 -- Data File
-require("__Spacehaul__.space_age_files.vanilla_data")
+require("__Spacehaul__.space_age_files.space_age_data")
