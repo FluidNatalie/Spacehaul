@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 24-04-2026
+  Minor Features:
+    - Changed electric engine to flying robot fram ratio.
+    - Made it so that if the SMG is researched you respawn with it (thanks to Shemp)
+    - Updated the internal library used
+---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 23-04-2026
   Minor Features:

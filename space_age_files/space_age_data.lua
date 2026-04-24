@@ -566,6 +566,8 @@ Recipe:get("personal-laser-defense-equipment"):setIngredients({
   {type= "item", name= "laser-turret", amount= 2}
 })
 
+
+Recipe:get("flying-robot-frame"):setEnergy(10)
 -- Gun turret. Reduce crafting time from 8s -> 1s
 Recipe:get("gun-turret"):setEnergy(1)
 
@@ -967,7 +969,7 @@ Recipe:cloneInto("heavy-armor", "uh_heavy-armor-plus")
 local heavyArmorPlusTech = Tech:cloneInto("heavy-armor", "uh_heavy-armor-plus")
 Tech:get("uh_heavy-armor-plus"):setColors("R"):setCost(45):setTime(30)
 :setPrerequisites({"heavy-armor"})
-:setEffect({type="unlock-recipe", recipe="uh_heavy-armor-plus"})
+:setEffects({{type="unlock-recipe", recipe="uh_heavy-armor-plus"}})
 heavyArmorPlusTech.icons = {
   {
     icon = heavyArmorPlusTech.icon,

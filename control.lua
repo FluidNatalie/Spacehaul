@@ -26,3 +26,11 @@ script.on_init(function (event)
   end
 
 end)
+
+script.on_event(defines.events.on_research_finished, function(event)
+    if event.research.name == "military"
+    and remote.interfaces["freeplay"]
+    and remote.interfaces["freeplay"]["set_respawn_items"] then
+        remote.call("freeplay", "set_respawn_items", {["submachine-gun"] = 1, ["firearm-magazine"] = 10})
+    end
+end)

@@ -43,6 +43,18 @@ function Tech:setCostFormula(formula)
 end
 
 -- Changes the science packs (colors) required for the technology
+-- R = Automation Science Pack, "Red Science"
+-- G = Logistic Science Pack, "Green Science"
+-- B = Chemical Science Pack, "Blue Science"
+-- M = Military Science Pack, "Military Science"
+-- P = Production Science Pack, "Purple Science"
+-- Y = Utility Science Pack, "Yellow Science"
+-- W = Space Science Pack, "White Science"
+-- V = Metallurgic Science Pack, "Vulcanus Science"
+-- F = Electromagnetic Science Pack, "Fulgoran Science"
+-- A = Agricultural Science Pack, "Gleba Science"
+-- C = Cryogenic Science Pack, "Aquilo Science"
+-- S = Promethium Science Pack, "Shatterd Science"
 function Tech:setColors(colors)
   local ingredients = {}
   if colors:find("R", 1, false) then
@@ -100,12 +112,6 @@ function Tech:setEffects(effects)
   return self
 end
 
--- Shorter version of setEffects for just 1 effect (which is common) - I will likely never use this but I dont have the heart to remove it
-function Tech:setEffect(effect)
-  self.effects = { effect }
-  return self
-end
-
 -- Changes the prerequisites that enable this technology
 function Tech:setPrerequisites(prerequisites)
   self.prerequisites = prerequisites
@@ -114,8 +120,7 @@ end
 
 function Tech:disable()
   self.enabled = false
-  -- TODO: should we hide it too (for saves which already have researched the tech)?
-  -- Could it be better to just remove the technology instead?
+  self.hidden = true
   return self
 end
 
